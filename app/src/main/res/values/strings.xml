@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">workshop_iot</string>
+    <string name="gas_level">Gas Level: %s</string>
+</resources>

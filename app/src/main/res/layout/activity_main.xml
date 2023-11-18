@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7FD7FF"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/gaz"/>
+    <TextView
+        android:id="@+id/make"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuration"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:fontFamily="cursive"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your broker name"
+                    app:hintTextColor="@color/black"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/purple_700"
+                    app:boxStrokeWidth="2dp"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/broker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:imeOptions="actionDone"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your port"
+                    app:hintTextColor="@color/black"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/purple_700"
+                    app:boxStrokeWidth="2dp"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/port"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:imeOptions="actionDone"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your topic "
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/purple_700"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeWidth="2dp"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/topic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:imeOptions="actionDone"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your seuil"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/purple_700"
+                    app:boxStrokeWidth="2dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:endIconMode="clear_text">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ceu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:imeOptions="actionDone"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="4dp">
+
+                <ImageButton
+                    android:id="@+id/btn"
+                    android:layout_width="156dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/img"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

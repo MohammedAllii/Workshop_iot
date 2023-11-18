@@ -1,0 +1,16 @@
+<!-- res/values/styles.xml -->
+<resources>
+
+    <!-- Your app's main theme -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme as needed -->
+    </style>
+
+    <!-- Splash screen theme -->
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/gaz</item>
+    </style>
+
+</resources>
